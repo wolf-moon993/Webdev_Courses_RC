@@ -1,0 +1,14 @@
+{
+  "name": "webdev_courses_rc",
+  "version": "1.0.0",
+  "description": "Compilation of web development/design course work, projects and assignments.",
+  "main": "index.js",
+  "scripts": {
+   "compile": "sass --watch --no-source-map BetterPhotos/main.scss BetterPhotos/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}
