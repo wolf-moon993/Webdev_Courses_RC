@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "auto-prefixer": "^0.4.2",
+    "csso-cli": "^4.0.2",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.60.0"
+  }
+}
