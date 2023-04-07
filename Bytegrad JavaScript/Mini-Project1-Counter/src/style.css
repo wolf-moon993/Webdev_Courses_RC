@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  background-image: radial-gradient(ellipse, #0da193, #002919);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  background-color: #59dca5;
+  width: 476px;
+  height: 615px;
+  border-radius: 12px;
+  box-shadow: 0 25px 121px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+}
+@media (max-width: 680px) or (max-height: 730px) {
+  .counter {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+.counter--limit {
+  background-color: #11938c;
+}
+.counter__title {
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 200px;
+  text-align: center;
+  line-height: 0.9;
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 60px;
+}
+@media (max-width: 680px) or (max-height: 730px) {
+  .counter__title {
+    margin-top: 100px;
+  }
+}
+.counter__value {
+  color: #1d2507;
+  font-size: 200px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.counter__reset-button {
+  cursor: pointer;
+  opacity: 0.3;
+  font-size: 35px;
+  transition: all 0.4s;
+}
+.counter__reset-button:hover, .counter__reset-button:focus {
+  opacity: 0.5;
+}
+.counter__buttons {
+  background-color: #1d2507;
+  height: 116px;
+  width: 100%;
+  margin-top: auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+}
+@media (max-width: 680px) or (max-height: 730px) {
+  .counter__buttons {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.counter__button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.counter__button:hover, .counter__button:focus {
+  background-color: #212b06;
+}
+.counter__button--increase {
+  border-left: 1px solid rgba(189, 254, 0, 0.15);
+}
+.counter__icon {
+  color: #00fedc;
+  opacity: 0.9;
+  font-size: 40px;
+}
