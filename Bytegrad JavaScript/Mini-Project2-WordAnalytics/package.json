@@ -1,0 +1,17 @@
+{
+  "name": "webdev_courses_rc",
+  "version": "1.0.0",
+  "description": "Compilation of web development/design course work, projects and assignments.",
+  "main": "index.js",
+  "scripts": {
+   "compile": "sass --watch --no-source-map src/main.scss src/style.css",
+    "build:compile":"sass --no-source-map src/main.scss build/compiled.css",
+    "build:prefixes": "postcss build/compiled.css --use autoprefixer --output build/prefixed.css",
+    "build:optimize":"csso build/prefixed.css --output build/style.css"
+  },
+  "author": "wolf-moon993 - RC",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}
